@@ -17,7 +17,7 @@ parts:
     plugin: autotools
     override-pull: |
       php_major_version=8.1
-      php_version=$(curl -s https://www.php.net/downloads.php | tac | tac | grep "<h3 id=\"v$php_major_version.*" | tr -d '<h3 id="vclassttle>')
+      php_version=$(curl -s https://www.php.net/downloads.php | tac | tac | grep "<h3 id=\"v$php_major_version.*" | grep -o -P '(?<="v).*(?=" class)')
 
       snapcraftctl set-version "${php_version}"
 
