@@ -1,8 +1,10 @@
 name: qycli-php81
 base: core20
 adopt-info: qycli-php81
-summary: PHP 8.1 for qycli
-description: "PHP for the qycli LEMP stack"
+summary: PHP 8.1 for the qycli LEMP stack - qycli.org
+description: |
+Compiled PHP binaries carrier for the qycli LEMP stack.
+This product includes PHP software, freely available from http://www.php.net/software/
 
 grade: stable
 confinement: strict
