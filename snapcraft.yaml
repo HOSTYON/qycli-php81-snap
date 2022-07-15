@@ -1,5 +1,5 @@
 name: qycli-php81
-base: core20
+base: core22
 adopt-info: qycli-php81
 summary: PHP 8.1 for qycli
 description: |
@@ -60,11 +60,11 @@ parts:
       - libssl-dev
       - libcurl4-openssl-dev
       - libpng-dev
-      - libjpeg8-dev
+      - libjpeg-dev
       - libwebp-dev
       - libmagickwand-dev
       - libzip-dev
-      - libargon2-0-dev
+      - libargon2-dev
       - libonig-dev
       - libsodium-dev
     autotools-configure-parameters:
@@ -91,3 +91,15 @@ parts:
       - --enable-gd=shared
       - --with-imagick=shared
       - --enable-redis=shared
+    stage-packages:
+      - libxml2-dev
+      - libssl-dev
+      - libcurl4-openssl-dev
+      - libpng-dev
+      - libjpeg-dev
+      - libwebp-dev
+      - libmagickwand-dev
+      - libzip-dev
+      - libargon2-dev
+      - libonig-dev
+      - libsodium-dev
