@@ -103,3 +103,4 @@ parts:
       - libargon2-dev
       - libonig-dev
       - libsodium-dev
+      - pkg-config
