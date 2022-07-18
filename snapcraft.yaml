@@ -1,5 +1,5 @@
 name: qycli-php81
-base: core22
+base: core20
 adopt-info: qycli-php81
 summary: PHP 8.1 for qycli
 description: |
